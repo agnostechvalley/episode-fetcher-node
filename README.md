@@ -3,7 +3,15 @@ episode-fetcher
 
 A toy project to download the latest episode(s) of your favorite podcast.
 
+# Install it
+
+`npm install`
+
 # Run it
+
+`$ ./fetch-episodes.js -f private-feed-server.herokuapp.com -u agnostechvalley -p polyglot`
+
+# Help
 
 ```
 Usage:
