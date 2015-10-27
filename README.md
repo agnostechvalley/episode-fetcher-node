@@ -5,12 +5,15 @@ A toy project to download the latest episode(s) of your favorite podcast.
 
 # Run it
 
-The script requires that the following environment variables are set:
+```
+Usage:
+  fetch-episodes.js [OPTIONS] [ARGS]
 
-- `FEED_URL` - The URL of the Podcast feed.
-- `USERNAME` - The feed is behind basic auth.
-- `PASSWORD` - The feed is behind basic auth.
-- `MAX_EPISODES` - I've had bad results with > `15`. Default is `10`.
-- `EPISODES_DIRECTORY` - Download 'em wherever you want. Default is the project's `./episodes`.
-
-Minimally, you would run `USERNAME=you@email.com PASSWORD=yourpass npm start`
+Options:
+  -f, --feed STRING      URL of the podcast feed
+  -u, --username STRING  Username for authenticated feed
+  -p, --password STRING  Password for authenticated feed
+  -m, --max [NUMBER]     Maximum number of episodes to download (Default is 10)
+  -d, --dir [STRING]     Directory to download episodes (Default is ./episodes)
+  -h, --help             Display help and usage details
+```
