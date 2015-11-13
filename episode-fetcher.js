@@ -65,7 +65,7 @@ EpisodeFetcher.prototype = {
 
 	run: function () {
 		console.info('episode-fetcher: Fetching RSS feed...');
-		console.log(this.authenticatedURL());
+
 		return rss(this.authenticatedURL(), this.maxEpisodes)
 			.bind(this)
 			.then(this.processFeed)
