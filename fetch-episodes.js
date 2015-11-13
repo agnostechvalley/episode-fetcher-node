@@ -13,7 +13,6 @@ const options = cli.parse({
 });
 
 const handleError = function handleError(err) {
-	throw err;
 	console.error('episode-fetcher ' + err.name + ': ' + err.message);
 };
 
